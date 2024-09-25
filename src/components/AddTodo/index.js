@@ -7,12 +7,16 @@ import { useNavigate } from 'react-router-dom'
 import './index.css'
 
 const AddTodo = () => {
+    const navigate = useNavigate()
+    const access = Cookies.get("jwt_token")
+    if (!access){
+        navigate("../login", {replace: true})
+    }
     const [todo, setterTodo] = useState('')
     const [status, setterStatus] = useState('')
     const changeTodo = event => {
         setterTodo(event.target.value)
     }
-    const navigate = useNavigate()
     const changeStatus = event => {
         setterStatus(event.target.value)
     }
