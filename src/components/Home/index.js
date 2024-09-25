@@ -5,6 +5,11 @@ import Cookies from 'js-cookie'
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate()
+    const access = Cookies.get("jwt_token")
+    if (!access){
+        navigate("../login", {replace: true})
+    }
     const [list, setterList] = useState([])
 
     useEffect(() => {
