@@ -5,10 +5,13 @@ import Cookies from 'js-cookie'
 import './index.css'
 
 const Login = props => {
+    const navigate = useNavigate()
+    const access = Cookies.get("jwt_token")
+    if (access){
+        navigate("../", {replace: true})
+    }
     const [username,setterUserName] = useState('')
     const [password,setterPassword] = useState('')
-    const navigate = useNavigate()
-
     const onChangeName = event => {
         console.log(event.target.value);
         setterUserName(event.target.value)
