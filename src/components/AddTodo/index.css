@@ -1,0 +1,63 @@
+.add-cont{
+    background-color: skyblue;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-header{
+    font-family: "Roboto";
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+.add-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 250px;
+    width: 280px;
+    background-color: white;
+    padding: 20px;
+}
+.add-label-text{
+    color: black;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.add-input-container{
+    height: 25px;
+    width: 200px;
+    padding: 5px 16px 5px 8px;
+    color: black;
+    font-size: 15px;
+    font-family: "Roboto";
+    margin-bottom: 10px;
+    outline: none;
+}
+.add-login-btn{
+    background-color: #f743a6;
+    color: white;
+    height: 35px;
+    width: 230px;
+    border-radius: 8px;
+    border-width: 0px;
+    margin-top: 10px;
+}
+.add-btn-back{
+    background-color: blue;
+    height: 30px;
+    width: 50px;
+    border-width: 0px;
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    padding: 2px;
+    align-self: center;
+    text-align: center;
+    margin-top: 15px;
+}
